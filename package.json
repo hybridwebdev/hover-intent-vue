@@ -1,0 +1,24 @@
+{
+  "name": "hover-intent-vue",
+  "version": "1.0.0",
+  "description": "A vue directive ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hybridwebdev/hover-intent-vue.git"
+  },
+  "keywords": [
+    "vue",
+    "hover-intent",
+    "hover"
+  ],
+  "author": "Justin Lindsay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hybridwebdev/hover-intent-vue/issues"
+  },
+  "homepage": "https://github.com/hybridwebdev/hover-intent-vue#readme"
+}
