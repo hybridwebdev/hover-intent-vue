@@ -1,27 +1,21 @@
-# test-project
+# Hover Intent - Vue
 
-> A Vue.js project
-
+> A vue directive that allows you to trigger a hover event intelligently. Wraps itself around hoverintent.js from https://github.com/tristen/hoverintent
 ## Build Setup
 
 ``` bash
 # install dependencies
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
 ```
+To use
+``` 
+  import Vue from 'vue'
+  import HoverIntent from 'hover-intent';
+  Vue.directive('hover-intent', HoverIntent)
+```
+In your component, use it as follows: 
+```
+<component-name v-hover-intent="yourMethodHere"/>
+```
+Your callback will receive one single value. True when the hover is triggered, and false when it leaves. 
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

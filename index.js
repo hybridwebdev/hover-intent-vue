@@ -1,4 +1,4 @@
-import hoverintent from "./base.js"
+import hoverintent from "./base.min.js"
 var listen;
 export default {
     bind: function (el, binding, vnode) {
