@@ -14,7 +14,10 @@ To use
 ```
 In your component, use it as follows: 
 ```
-<component-name v-hover-intent="yourMethodHere"/>
+<component-name v-hover-intent="{ change: someMethod, value: someValue } "/>
 ```
-Your callback will receive one single value. True when the hover is triggered, and false when it leaves. 
+Your someMethod callback will receive one single value. True when the hover is triggered, and false when it leaves. 
+The value must also be passed, as it's a means of fixing an issue with hoverintent not correctly handling manual changes
+to the state of the hover. 
+
 
