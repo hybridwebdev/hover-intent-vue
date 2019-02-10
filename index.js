@@ -1,4 +1,4 @@
-import hoverintent from "./base.js"
+import hoverintent from "./base.min.js"
 export default {
     update: function (el, binding, vnode) {
         if(!binding.value.value) {
