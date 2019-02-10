@@ -20,4 +20,5 @@ Your someMethod callback will receive one single value. True when the hover is t
 The value must also be passed, as it's a means of fixing an issue with hoverintent not correctly handling manual changes
 to the state of the hover. 
 
+When invoking the hoverintent directive, there is an optional 4th parameter (object) which will allow you to change options of hoverintent. Please see base.js for an example of what options ae configurable.  
 
