@@ -2,7 +2,6 @@
 
 > A vue directive that allows you to trigger a hover event intelligently. Wraps itself around hoverintent.js from https://github.com/tristen/hoverintent
 ## Build Setup
-
 ``` bash
 # install dependencies
 npm install

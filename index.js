@@ -1,13 +1,14 @@
-import hoverintent from "./base.min.js"
-var listen;
+import hoverintent from "./base.js"
 export default {
-    bind: function (el, binding, vnode) {
-        listen = hoverintent( el, 
-            () => binding.value(true), 
-            () => binding.value(false) 
-        )
+    update: function (el, binding, vnode) {
+        if(!binding.value.value) {
+            el.hoverintent.manualReset()
+        }
     },
-    unbind() {
-        listen.remove()
+    bind (el, binding, vnode) {
+        el.hoverintent = hoverintent( el, () => binding.value.change(true), () => binding.value.change(false) )
+    },
+    unbind(el) {
+        el.hoverintent.remove()
     }
 } 
