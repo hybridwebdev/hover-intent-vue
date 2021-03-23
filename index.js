@@ -6,7 +6,7 @@ export default {
         }
     },
     bind (el, binding, vnode) {
-        el.hoverintent = hoverintent( el, () => binding.value.change(true), () => binding.value.change(false) )
+        el.hoverintent = hoverintent( el, () => binding.value.change(true), () => binding.value.change(false), binding.value.options )
     },
     unbind(el) {
         el.hoverintent.remove()
