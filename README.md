@@ -9,7 +9,7 @@ npm install
 To use
 ``` 
   import Vue from 'vue'
-  import HoverIntent from 'hover-intent';
+  import HoverIntent from 'hover-intent-vue';
   Vue.directive('hover-intent', HoverIntent)
 ```
 In your component, use it as follows: 
